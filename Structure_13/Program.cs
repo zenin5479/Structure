@@ -4,8 +4,6 @@ namespace Structure_13
 {
    internal class Program
    {
-
-
       static void Main()
       {
          // Создание экземпляра класса
