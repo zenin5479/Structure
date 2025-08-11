@@ -4,38 +4,43 @@ namespace Structure_12
 {
    public struct Train
    {
-      //Создание закрытых полей класса
-      private string punkt;
-      private int nomer;
-      private DateTime time;
+      // Создание закрытых полей класса
+      private string _punkt;
+      private int _nomer;
+      private DateTime _time;
 
-      public Train(string punkt, int nomer, DateTime time) //Пользовательский конструктор
+      // Пользовательский конструктор
+      public Train(string punkt, int nomer, DateTime time)
       {
-         //Инициализация полей класса
-         this.punkt = punkt;
-         this.nomer = nomer;
-         this.time = time;
+         // Инициализация полей класса
+         this._punkt = punkt;
+         this._nomer = nomer;
+         this._time = time;
       }
 
-      public string Punkt //Свойство для возвращения значения поля punkt
+      // Свойство для возвращения значения поля punkt
+      public string Punkt
       {
-         get { return punkt; }
+         get { return _punkt; }
       }
 
-      public int Nomer //Свойство для возвращения значения поля nomer
+      // Свойство для возвращения значения поля nomer
+      public int Nomer
       {
-         get { return nomer; }
+         get { return _nomer; }
       }
 
-      public DateTime Time //Свойство для возвращения значения поля time
+      // Свойство для возвращения значения поля time
+      public DateTime Time
       {
-         get { return time; }
+         get { return _time; }
       }
    }
-   
+
    public static class MyClass
    {
-      public static void Sort(Train[] trains) //Статический метод сортировки массива по номерам поездов
+      // Статический метод сортировки массива по номерам поездов
+      public static void Sort(Train[] trains)
       {
          for (int i = 0; i < trains.Length; i++)
          {
@@ -51,30 +56,41 @@ namespace Structure_12
          }
       }
 
-      public static void Search(Train[] train, int poisk) //Статический метод поиска указаной записи в массиве по ключу (номер поезда)
+      // Статический метод поиска указаной записи в массиве по ключу (номер поезда)
+      public static void Search(Train[] train, int poisk)
       {
-         bool ok = false; //Создание переменной логического типа
-         for (int i = 0; i < train.Length; i++) //Проход по всем элементам массива
+         // Создание переменной логического типа
+         bool ok = false;
+         // Проход по всем элементам массива
+         for (int i = 0; i < train.Length; i++)
          {
-            if (train[i].Nomer == poisk) //Проверка, эсть запись в массиве с таким номером поезда или нет
+            // Проверка, эсть запись в массиве с таким номером поезда или нет
+            if (train[i].Nomer == poisk)
             {
                Console.WriteLine("Номер поезда: {0} Пункт назначения: {1} Дата и время отправления: {2} ",
                                  train[i].Nomer, train[i].Punkt, train[i].Time);
-               ok = true; //При успешном нахождении записи, ставим "флаг"
-
+               // При успешном нахождении записи, ставим "флаг"
+               ok = true;
             }
          }
-         if (!ok) //Если такой записи нету "флаг" останется false и выполнится следуйщий код
+
+         // Если такой записи нету "флаг" останется false и выполнится следуйщий код
+         if (!ok)
+         {
             Console.WriteLine("Поезд не найден!");
+         }
       }
 
-      public static void AddingAnArray(Train[] train) //Статический метод добавления новой записи в массив
+      // Статический метод добавления новой записи в массив
+      public static void AddingAnArray(Train[] train)
       {
          for (int i = 0; i < train.Length; i++)
          {
             Console.Write("Введите пункт назначения поезда:");
-            string punkt = Console.ReadLine(); //Считывание значения с клавиатуры
-            punkt = string.IsNullOrEmpty(punkt) ? "Не указан пункт назначения" : punkt; //Запись в поле с помощью тернарного оператора
+            // Считывание значения с клавиатуры
+            string punkt = Console.ReadLine();
+            // Запись в поле с помощью тернарного оператора
+            punkt = string.IsNullOrEmpty(punkt) ? "Не указан пункт назначения" : punkt;
 
             Console.Write("Введите номер поезда:");
             string d = Console.ReadLine();
@@ -83,17 +99,18 @@ namespace Structure_12
             Console.Write("Введите дату отправления:");
             d = Console.ReadLine();
             DateTime date = string.IsNullOrEmpty(d) ? DateTime.Now : DateTime.Parse(d);
-
-            train[i] = new Train(punkt, nomer, date); //Создание нового екземпляра класса Train и присвоение ссылки на него в массив train
+            // Создание нового екземпляра класса Train и присвоение ссылки на него в массив train
+            train[i] = new Train(punkt, nomer, date);
          }
       }
 
-      public static void Show(Train[] train) //Статический метод отображения значений полей
+      // Статический метод отображения значений полей
+      public static void Show(Train[] train) 
       {
          for (int i = 0; i < train.Length; i++)
          {
             Console.WriteLine("Номер поезда: {0} Пункт назначения: {1} Дата и время отправления: {2} ", train[i].Nomer,
-                              train[i].Punkt, train[i].Time);
+               train[i].Punkt, train[i].Time);
 
          }
       }
