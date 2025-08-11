@@ -4,17 +4,7 @@ namespace Structure_13
 {
    internal class Program
    {
-      // Статический метод для внесения изменений в поле класса change
-      static void ClassTaker(MyClass c)
-      {
-         c.Change = "изменено";
-      }
 
-      // Статический метод для внесения изменений в поле структуры change
-      static void StructTaker(MyStruct s)
-      {
-         s.Change = "изменено";
-      }
 
       static void Main()
       {
@@ -37,6 +27,18 @@ namespace Structure_13
          Console.WriteLine("Поле структуры = {0}", testStruct.Change);
 
          Console.ReadKey();
+      }
+
+      // Статический метод для внесения изменений в поле класса change
+      static void ClassTaker(MyClass c)
+      {
+         c.Change = "изменено";
+      }
+
+      // Статический метод для внесения изменений в поле структуры change
+      static void StructTaker(MyStruct s)
+      {
+         s.Change = "изменено";
       }
    }
 }
