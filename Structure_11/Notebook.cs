@@ -28,20 +28,18 @@ namespace Structure_11
       // Пользовательский конструктор, принимает 3 аргумента
       public Notebook(string model, string producer, double price)
       {
-         this.Model = model;
-         this._producer = producer;
-         this._price = Math.Abs(price);
+         Model = model;
+         _producer = producer;
+         _price = Math.Abs(price);
       }
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
-      public Notebook(string model)
-         : this(model, "", 0)
+      public Notebook(string model) : this(model, "", 0)
       {
       }
 
       //Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
-      public Notebook(double price)
-         : this("", "", price)
+      public Notebook(double price) : this("", "", price)
       {
       }
 

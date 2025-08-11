@@ -27,7 +27,6 @@ namespace Structure_12
          Console.WriteLine(new string('-', 50));
          // Поиск в массиве
          MyClass.Search(train, poisk);
-         //Delay
          Console.ReadKey();
       }
    }

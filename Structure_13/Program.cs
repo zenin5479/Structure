@@ -14,7 +14,6 @@ namespace Structure_13
          testClass.Change = "не изменено";
          // Запись в поле change
          testStruct.Change = "не изменено";
-
          // Вызов метода ClassTaker и передача в качестве аргумента ссылки на класс
          ClassTaker(testClass);
          // Вызов метода StructTaker и передача в качестве аргумента ссылки на структуру
@@ -23,7 +22,6 @@ namespace Structure_13
          Console.WriteLine("Поле классса = {0}", testClass.Change);
          // Отобраджение значения поля change структуры
          Console.WriteLine("Поле структуры = {0}", testStruct.Change);
-
          Console.ReadKey();
       }
 
