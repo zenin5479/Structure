@@ -1,22 +1,21 @@
 ﻿using System;
 
-// Структуры. 
+// Структуры
+// Пример хорошего дизайна
 
-// Пример хорошего дизайна.
-
-namespace Structure
+namespace Structure_10
 {
    struct ZipCode
    {
       // Поля
-      int fiveDigitCode;
-      int plusFourExtension;
+      int _fiveDigitCode;
+      int _plusFourExtension;
 
-      // Конструкторы.
+      // Конструкторы
       public ZipCode(int fiveDigitCode, int plusFourExtension)
       {
-         this.fiveDigitCode = fiveDigitCode;
-         this.plusFourExtension = plusFourExtension;
+         this._fiveDigitCode = fiveDigitCode;
+         this._plusFourExtension = plusFourExtension;
       }
 
       public ZipCode(int fiveDigitCode)
@@ -24,15 +23,15 @@ namespace Structure
       {
       }
 
-      // Свойства.
+      // Свойства
       public int FiveDigitCode
       {
-         get { return fiveDigitCode; }
+         get { return _fiveDigitCode; }
       }
 
       public int PlusFourExtension
       {
-         get { return plusFourExtension; }
+         get { return _plusFourExtension; }
       }
    }
 
@@ -45,7 +44,7 @@ namespace Structure
          Console.WriteLine(zipCode.FiveDigitCode);
          Console.WriteLine(zipCode.PlusFourExtension);
 
-         // Delay.
+         // Delay
          Console.ReadKey();
       }
    }
