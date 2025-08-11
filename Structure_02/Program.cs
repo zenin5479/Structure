@@ -26,14 +26,14 @@ namespace Structure_02
    {
       static void Main()
       {
-         // Создание экземпляра структурного типа с вызовом конструктора по умолчанию.
+         // Создание экземпляра структурного типа с вызовом конструктора по умолчанию
          MyStruct instance = new MyStruct();
 
          instance.Field = 1;
 
          Console.WriteLine(instance.Field);
 
-         // Delay.
+         // Delay
          Console.ReadKey();
       }
    }
