@@ -26,7 +26,7 @@ namespace Structure_12
          // 50 почеркиваний
          Console.WriteLine(new string('-', 50));
          // Поиск в массиве
-         MyClass.Search(train, poisk); 
+         MyClass.Search(train, poisk);
          //Delay
          Console.ReadKey();
       }
