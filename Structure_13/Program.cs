@@ -2,30 +2,18 @@
 
 namespace Structure_13
 {
-   // Класс
-   class MyClass
-   {
-      public string change;
-   }
-
-   // Струкрура
-   struct MyStruct
-   {
-      public string change;
-   }
-
    internal class Program
    {
       // Статический метод для внесения изменений в поле класса change
       static void ClassTaker(MyClass c)
       {
-         c.change = "изменено";
+         c.Change = "изменено";
       }
 
       // Статический метод для внесения изменений в поле структуры change
       static void StructTaker(MyStruct s)
       {
-         s.change = "изменено";
+         s.Change = "изменено";
       }
 
       static void Main()
@@ -35,18 +23,18 @@ namespace Structure_13
          // Создание структуры на куче
          MyStruct testStruct = new MyStruct();
          // Запись в поле change
-         testClass.change = "не изменено";
+         testClass.Change = "не изменено";
          // Запись в поле change
-         testStruct.change = "не изменено";
+         testStruct.Change = "не изменено";
 
          // Вызов метода ClassTaker и передача в качестве аргумента ссылки на класс
          ClassTaker(testClass);
          // Вызов метода StructTaker и передача в качестве аргумента ссылки на структуру
          StructTaker(testStruct);
          // Отобраджение значения поля change класса
-         Console.WriteLine("Поле классса = {0}", testClass.change);
+         Console.WriteLine("Поле классса = {0}", testClass.Change);
          // Отобраджение значения поля change структуры
-         Console.WriteLine("Поле структуры = {0}", testStruct.change);
+         Console.WriteLine("Поле структуры = {0}", testStruct.Change);
 
          Console.ReadKey();
       }
