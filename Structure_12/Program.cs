@@ -105,13 +105,12 @@ namespace Structure_12
       }
 
       // Статический метод отображения значений полей
-      public static void Show(Train[] train) 
+      public static void Show(Train[] train)
       {
          for (int i = 0; i < train.Length; i++)
          {
             Console.WriteLine("Номер поезда: {0} Пункт назначения: {1} Дата и время отправления: {2} ", train[i].Nomer,
                train[i].Punkt, train[i].Time);
-
          }
       }
    }
@@ -120,26 +119,28 @@ namespace Structure_12
    {
       static void Main()
       {
-         var train = new Train[2]; //Создание массива типа Train из двух элементов 
-
-         MyClass.AddingAnArray(train); //Вызов метода для создания нового екземпляра класса Train
-         Console.WriteLine(new string('-', 50)); //50 почеркиваний
-
+         // Создание массива типа Train из двух элементов
+         Train[] train = new Train[2];
+         // Вызов метода для создания нового екземпляра класса Train
+         MyClass.AddingAnArray(train);
+         // 50 почеркиваний
+         Console.WriteLine(new string('-', 50));
          Console.WriteLine("Вы ввели такую информацию о поездах:");
-         Console.WriteLine(new string('-', 50)); ; //50 почеркиваний
-
-         MyClass.Sort(train);//Вызов метода сортировки массива
-         MyClass.Show(train); //Вызов метода отображения содержимого массива
-
-         Console.WriteLine(new string('-', 50));//50 почеркиваний
-
+         // 50 почеркиваний
+         Console.WriteLine(new string('-', 50));
+         // Вызов метода сортировки массива
+         MyClass.Sort(train);
+         // Вызов метода отображения содержимого массива
+         MyClass.Show(train);
+         // 50 почеркиваний
+         Console.WriteLine(new string('-', 50));
          Console.WriteLine("Введите номер поезда:");
          int poisk = Convert.ToInt32(Console.ReadLine());
-
-         Console.WriteLine(new string('-', 50));//50 почеркиваний
-         MyClass.Search(train, poisk); //Поиск в массиве
-
-         //Delay.
+         // 50 почеркиваний
+         Console.WriteLine(new string('-', 50));
+         // Поиск в массиве
+         MyClass.Search(train, poisk); 
+         //Delay
          Console.ReadKey();
       }
    }
