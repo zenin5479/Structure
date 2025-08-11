@@ -1,12 +1,37 @@
 ﻿using System;
 
-namespace Structure_07
+// Структуры. Конструкторы.
+
+namespace Structure
 {
-   internal class Program
+   struct MyStruct
    {
-      static void Main(string[] args)
+      public int field;
+
+      // Пользовательский конструктор с параметрами.
+      public MyStruct(int value)
       {
-         Console.WriteLine("Hello World!");
+         this.field = value;
+
+         Console.WriteLine(value);
+      }
+   }
+
+   class Program
+   {
+      static void Main()
+      {
+         // Создание экземпляра структурного типа без вызова конструктора.
+         MyStruct instance;
+
+
+         // Нельзя использовать не инициализированную переменную.
+         // Так как конструктор не вызывался переменная field осталась не инициализированной.
+
+         //Console.WriteLine(instance.field);   // Убрать комментарий.
+
+         // Delay.
+         Console.ReadKey();
       }
    }
 }
