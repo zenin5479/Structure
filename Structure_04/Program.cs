@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Структуры.
+// Структуры
 
 namespace Structure_04
 {
@@ -8,12 +8,12 @@ namespace Structure_04
    {
       public int field;
 
-      // Конструкторы по умолчанию нельзя задавать явно.
+      // Конструкторы по умолчанию нельзя задавать явно
       //public MyStruct()
       //{
       //}
 
-      // Если в структуре имеется пользовательский конструктор, то требуется в нем инициализировать все поля.
+      // Если в структуре имеется пользовательский конструктор, то требуется в нем инициализировать все поля
       public MyStruct(int value)
       {
          Console.WriteLine("Constructor");
@@ -25,12 +25,12 @@ namespace Structure_04
    {
       static void Main()
       {
-         // Создание экземпляра структурного типа, с вызовом пользовательского конструктора.            
+         // Создание экземпляра структурного типа, с вызовом пользовательского конструктора          
          MyStruct instance = new MyStruct(1);
 
          Console.WriteLine(instance.field);
 
-         // Delay.
+         // Delay
          Console.ReadKey();
       }
    }
