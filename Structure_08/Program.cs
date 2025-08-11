@@ -6,21 +6,13 @@
 
 namespace Structure_08
 {
-   struct MyStruct
-   {
-      public int MyProperty { get; set; }
-   }
-
    class Program
    {
       static void Main()
       {
          MyStruct instance = new MyStruct();
-
          instance.MyProperty = 1;
          Console.WriteLine(instance.MyProperty);
-
-         // Delay
          Console.ReadKey();
       }
    }
