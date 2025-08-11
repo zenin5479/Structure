@@ -1,17 +1,18 @@
 ﻿using System;
 
-// Структуры. Конструкторы.
+// Структуры
+// Конструкторы
 
-namespace Structure
+namespace Structure_07
 {
    struct MyStruct
    {
-      public int field;
+      public int Field;
 
-      // Пользовательский конструктор с параметрами.
+      // Пользовательский конструктор с параметрами
       public MyStruct(int value)
       {
-         this.field = value;
+         this.Field = value;
 
          Console.WriteLine(value);
       }
@@ -21,16 +22,16 @@ namespace Structure
    {
       static void Main()
       {
-         // Создание экземпляра структурного типа без вызова конструктора.
+         // Создание экземпляра структурного типа без вызова конструктора
          MyStruct instance;
 
+         // Нельзя использовать не инициализированную переменную
+         // Так как конструктор не вызывался переменная field осталась не инициализированной
 
-         // Нельзя использовать не инициализированную переменную.
-         // Так как конструктор не вызывался переменная field осталась не инициализированной.
+         // Убрать комментарий
+         //Console.WriteLine(instance.Field);
 
-         //Console.WriteLine(instance.field);   // Убрать комментарий.
-
-         // Delay.
+         // Delay
          Console.ReadKey();
       }
    }
