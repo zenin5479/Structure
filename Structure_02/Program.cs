@@ -6,34 +6,14 @@
 
 namespace Structure_02
 {
-   struct MyStruct
-   {
-      private int field;
-
-      public int Field
-      {
-         get { return field; }
-         set { field = value; }
-      }
-
-      public void Show()
-      {
-         Console.WriteLine(field);
-      }
-   }
-
    class Program
    {
       static void Main()
       {
          // Создание экземпляра структурного типа с вызовом конструктора по умолчанию
          MyStruct instance = new MyStruct();
-
          instance.Field = 1;
-
          Console.WriteLine(instance.Field);
-
-         // Delay
          Console.ReadKey();
       }
    }
