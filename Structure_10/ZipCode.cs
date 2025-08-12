@@ -9,13 +9,14 @@
       // Конструкторы
       public ZipCode(int fiveDigitCode, int plusFourExtension)
       {
-         this._fiveDigitCode = fiveDigitCode;
-         this._plusFourExtension = plusFourExtension;
+         _fiveDigitCode = fiveDigitCode;
+         _plusFourExtension = plusFourExtension;
       }
 
       public ZipCode(int fiveDigitCode)
-         : this(fiveDigitCode, 0)
       {
+         _fiveDigitCode = 0;
+         _plusFourExtension = 0;
       }
 
       // Свойства
