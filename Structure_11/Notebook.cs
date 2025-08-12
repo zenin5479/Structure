@@ -30,7 +30,7 @@ namespace Structure_11
       {
          Model = model;
          _producer = producer;
-         _price = Math.Abs(price);
+         _price = price;
       }
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
