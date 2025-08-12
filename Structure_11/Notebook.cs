@@ -16,6 +16,14 @@ namespace Structure_11
          _price = price;
       }
 
+      // Перегрузка пользовательского конструктора, принимает 2 аргумента
+      public Notebook(string model, string producer)
+      {
+         _producer = producer;
+         _price = 0;
+         _model = model;
+      }
+      
       // Перегрузка пользовательского конструктора, принимает 1 аргумент
       public Notebook(string model)
       {
@@ -24,12 +32,7 @@ namespace Structure_11
          _model = model;
       }
 
-      public Notebook(string model, string producer)
-      {
-         _producer = producer;
-         _price = 0;
-         _model = model;
-      }
+
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент
       public Notebook(double price)
