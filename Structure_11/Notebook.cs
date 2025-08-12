@@ -8,8 +8,6 @@ namespace Structure_11
       readonly double _price;
       private readonly string Model;
 
-      
-
       // Пользовательский конструктор, принимает 3 аргумента
       public Notebook(string model, string producer, double price)
       {
