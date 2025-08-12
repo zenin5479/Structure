@@ -6,12 +6,12 @@ namespace Structure_11
    {
       readonly string _producer;
       readonly double _price;
-      private readonly string Model;
+      readonly string _model;
 
       // Пользовательский конструктор, принимает 3 аргумента
       public Notebook(string model, string producer, double price)
       {
-         Model = model;
+         _model = model;
          _producer = producer;
          _price = price;
       }
@@ -21,21 +21,31 @@ namespace Structure_11
       {
          _producer = null;
          _price = 0;
-         Model = model;
+         _model = model;
       }
 
-      //Перегрузка пользовательского конструктора, принимает 1 аргумент
+      public Notebook(string model, string producer)
+      {
+         _producer = producer;
+         _price = 0;
+         _model = model;
+      }
+
+      // Перегрузка пользовательского конструктора, принимает 1 аргумент
       public Notebook(double price)
       {
          _price = price;
          _producer = null;
-         Model = null;
+         _model = null;
       }
+
+      // Перегрузка пользовательского конструктора, принимает 1 аргумент
+     
 
       // Метод отображения
       public void Show()
       {
-         Console.WriteLine("Модель {0} от {1} стоимостью {2}$", Model, _producer, _price);
+         Console.WriteLine("Модель {0} от {1} стоимостью {2}$", _model, _producer, _price);
       }
    }
 }
