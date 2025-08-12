@@ -74,7 +74,7 @@ namespace Structure_12
       {
          for (int i = 0; i < train.Length; i++)
          {
-            Console.WriteLine("Номер поезда: {0} Пункт назначения: {1} Дата и время отправления: {2} ", train[i].Nomer,
+            Console.WriteLine("Номер поезда: {0} Пункт назначения: {1} Дата и время отправления: {2}", train[i].Nomer,
                train[i].Punkt, train[i].Time);
          }
       }

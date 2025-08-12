@@ -13,9 +13,9 @@ namespace Structure_12
       public Train(string punkt, int nomer, DateTime time)
       {
          // Инициализация полей класса
-         this._punkt = punkt;
-         this._nomer = nomer;
-         this._time = time;
+         _punkt = punkt;
+         _nomer = nomer;
+         _time = time;
       }
 
       // Свойство для возвращения значения поля punkt
