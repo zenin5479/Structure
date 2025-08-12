@@ -43,7 +43,7 @@ namespace Structure_11
       // Метод отображения
       public void Show()
       {
-         Console.WriteLine("Производитель: {0}; Модель: {1} стоимостью {2}$",_producer, _model,  _price);
+         Console.WriteLine("Производитель: {0} Модель: {1} Cтоимость ${2}", _producer, _model, _price);
       }
    }
 }
