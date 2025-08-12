@@ -9,7 +9,7 @@ namespace Structure_07
       // Пользовательский конструктор с параметрами
       public MyStruct(int value)
       {
-         this.Field = value;
+         Field = value;
 
          Console.WriteLine(value);
       }
