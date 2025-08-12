@@ -22,7 +22,7 @@
       // Свойства
       public int FiveDigitCode
       {
-         get { return _fiveDigitCode; }
+         get {return _fiveDigitCode; }
       }
 
       public int PlusFourExtension
