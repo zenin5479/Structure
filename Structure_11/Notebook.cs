@@ -6,10 +6,10 @@ namespace Structure_11
    {
       readonly string _producer;
       readonly double _price;
-      readonly string _model;
+      readonly int _model;
 
       // Пользовательский конструктор, принимает 3 аргумента
-      public Notebook(string producer, string model, double price)
+      public Notebook(string producer, int model, double price)
       {
          _producer = producer;
          _model = model;
@@ -17,7 +17,7 @@ namespace Structure_11
       }
 
       // Перегрузка пользовательского конструктора, принимает 2 аргумента
-      public Notebook(string model, string producer)
+      public Notebook(int model, string producer)
       {
          _producer = producer;
          _price = 0;
@@ -25,7 +25,7 @@ namespace Structure_11
       }
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент
-      public Notebook(string model)
+      public Notebook(int model)
       {
          _producer = null;
          _price = 0;
@@ -37,7 +37,7 @@ namespace Structure_11
       {
          _price = price;
          _producer = null;
-         _model = null;
+         _model = 0;
       }
 
       // Метод отображения
