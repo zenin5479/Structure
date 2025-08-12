@@ -32,8 +32,6 @@ namespace Structure_11
          _model = model;
       }
 
-
-
       // Перегрузка пользовательского конструктора, принимает 1 аргумент
       public Notebook(double price)
       {
@@ -41,9 +39,6 @@ namespace Structure_11
          _producer = null;
          _model = null;
       }
-
-      // Перегрузка пользовательского конструктора, принимает 1 аргумент
-     
 
       // Метод отображения
       public void Show()
