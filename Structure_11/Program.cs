@@ -6,8 +6,6 @@ namespace Structure_11
    {
       static void Main()
       {
-         
-         
          // Создание екземпляра класса Notebook
          Notebook notebook1 = new Notebook();
          // Отображение полей класса
@@ -18,6 +16,9 @@ namespace Structure_11
          //Создание экземпляра класса с помощью пользовательского конструктора и передача в конструктор 1 параметр
          Notebook notebook3 = new Notebook("RR-34");
          notebook3.Show();
+         //Создание экземпляра класса с помощью пользовательского конструктора и передача в конструктор 1 параметр
+         Notebook notebook4 = new Notebook(96.00);
+         notebook4.Show();
          Console.ReadKey();
       }
    }

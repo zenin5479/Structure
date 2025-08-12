@@ -35,7 +35,7 @@ namespace Structure_11
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
       public Notebook(string model)
-      { 
+      {
          _producer = null;
          _price = 0;
          Model = null;
