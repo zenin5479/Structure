@@ -7,7 +7,7 @@ namespace Structure_11
       static void Main()
       {
          // Создание екземпляра класса Notebook
-         Notebook notebook1 = new Notebook();
+         Notebook notebook1 = new Notebook("Latitude 5420", "DELL", 422.27);
          // Отображение полей класса
          notebook1.Show();
          // Создание экземпляра класса с помощью пользовательского конструктора и передача в конструктор 3 параметра
