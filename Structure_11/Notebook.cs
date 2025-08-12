@@ -34,13 +34,19 @@ namespace Structure_11
       }
 
       // Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
-      public Notebook(string model) : this(model, "", 0)
-      {
+      public Notebook(string model)
+      { 
+         _producer = null;
+         _price = 0;
+         Model = null;
       }
 
       //Перегрузка пользовательского конструктора, принимает 1 аргумент и вызывает конструктор принимающий 3 аргумента
-      public Notebook(double price) : this("", "", price)
+      public Notebook(double price)
       {
+         _producer = null;
+         _price = 0;
+         Model = null;
       }
 
       // Метод отображения

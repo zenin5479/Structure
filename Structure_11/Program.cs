@@ -6,6 +6,8 @@ namespace Structure_11
    {
       static void Main()
       {
+         
+         
          // Создание екземпляра класса Notebook
          Notebook notebook1 = new Notebook();
          // Отображение полей класса
