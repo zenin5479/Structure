@@ -17,7 +17,7 @@ namespace Structure_11
          Notebook notebook3 = new Notebook(5440);
          notebook3.Show();
          // Создание экземпляра класса с помощью пользовательского конструктора и передача в конструктор 1 параметра
-         Notebook notebook4 = new Notebook(96.67);
+         Notebook notebook4 = new Notebook(416.67);
          notebook4.Show();
          Console.ReadKey();
       }
